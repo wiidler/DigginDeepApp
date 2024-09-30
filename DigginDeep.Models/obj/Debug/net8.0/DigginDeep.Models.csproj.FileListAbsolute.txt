@@ -1,0 +1,12 @@
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/bin/Debug/net8.0/DigginDeep.Models.deps.json
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/bin/Debug/net8.0/DigginDeep.Models.dll
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/bin/Debug/net8.0/DigginDeep.Models.pdb
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.GeneratedMSBuildEditorConfig.editorconfig
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.AssemblyInfoInputs.cache
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.AssemblyInfo.cs
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.csproj.CoreCompileInputs.cache
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.sourcelink.json
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.dll
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/refint/DigginDeep.Models.dll
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.pdb
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/ref/DigginDeep.Models.dll

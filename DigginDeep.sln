@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigginDeep.Web", "DigginDeep.Web\DigginDeep.Web.csproj", "{A2345B6D-0256-48D2-BFFE-458043DF737E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigginDeep.Models", "DigginDeep.Models\DigginDeep.Models.csproj", "{6EEC366E-5297-4BEE-8EDF-108D69330A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigginDeep.API", "DigginDeep.API\DigginDeep.API.csproj", "{7235E320-71E4-4DDC-828C-92EA8D9D11D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2345B6D-0256-48D2-BFFE-458043DF737E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2345B6D-0256-48D2-BFFE-458043DF737E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2345B6D-0256-48D2-BFFE-458043DF737E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2345B6D-0256-48D2-BFFE-458043DF737E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEC366E-5297-4BEE-8EDF-108D69330A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEC366E-5297-4BEE-8EDF-108D69330A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEC366E-5297-4BEE-8EDF-108D69330A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEC366E-5297-4BEE-8EDF-108D69330A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7235E320-71E4-4DDC-828C-92EA8D9D11D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7235E320-71E4-4DDC-828C-92EA8D9D11D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7235E320-71E4-4DDC-828C-92EA8D9D11D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7235E320-71E4-4DDC-828C-92EA8D9D11D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
