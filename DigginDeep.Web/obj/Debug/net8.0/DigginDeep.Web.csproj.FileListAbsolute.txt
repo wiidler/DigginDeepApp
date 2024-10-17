@@ -66,3 +66,4 @@
 /workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/DigginDeep.Web.pdb
 /workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/DigginDeep.Web.genruntimeconfig.cache
 /workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/ref/DigginDeep.Web.dll
+/workspaces/DigginDeepApp/DigginDeep.Web/bin/Debug/net8.0/Microsoft.AspNetCore.Blazor.HttpClient.dll

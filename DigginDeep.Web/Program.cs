@@ -1,4 +1,5 @@
 using DigginDeep.Web.Components;
+using DigginDeep.Web.Components.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,8 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-var app = builder.Build();
+builder.Services.AddHttpClient<IStudentService, StudentService>(
+client => client.BaseAddress = new Uri("http://localhost:5000"));
 
+
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
