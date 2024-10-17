@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o17KMNUi59tShpQjb496t2gHpBRSG4/MCqbcnz5KMeQ=",
+  "Hash": "x00Qccfe6GS0hOqiE6kl/aS//bRGT+Hn3KkaAgGA1gw=",
   "Source": "DigginDeep.Web",
   "BasePath": "_content/DigginDeep.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "DigginDeep.Web/wwwroot",
       "Source": "DigginDeep.Web",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/",
       "BasePath": "_content/DigginDeep.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/bundle/DigginDeep.Web.styles.css",
+      "Identity": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/bundle/DigginDeep.Web.styles.css",
       "SourceId": "DigginDeep.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/DigginDeep.Web",
       "RelativePath": "DigginDeep.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/bundle/DigginDeep.Web.styles.css"
+      "OriginalItemSpec": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/bundle/DigginDeep.Web.styles.css"
     },
     {
-      "Identity": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/projectbundle/DigginDeep.Web.bundle.scp.css",
+      "Identity": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/projectbundle/DigginDeep.Web.bundle.scp.css",
       "SourceId": "DigginDeep.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/DigginDeep.Web",
       "RelativePath": "DigginDeep.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/projectbundle/DigginDeep.Web.bundle.scp.css"
+      "OriginalItemSpec": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/scopedcss/projectbundle/DigginDeep.Web.bundle.scp.css"
     },
     {
-      "Identity": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/app.css",
+      "Identity": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/app.css",
       "SourceId": "DigginDeep.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/",
       "BasePath": "_content/DigginDeep.Web",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/bootstrap/bootstrap.min.css",
       "SourceId": "DigginDeep.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/",
       "BasePath": "_content/DigginDeep.Web",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/bootstrap/bootstrap.min.css.map",
       "SourceId": "DigginDeep.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/",
       "BasePath": "_content/DigginDeep.Web",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/favicon.png",
+      "Identity": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/favicon.png",
       "SourceId": "DigginDeep.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/wwwroot/",
+      "ContentRoot": "/workspaces/DigginDeepApp/DigginDeep.Web/wwwroot/",
       "BasePath": "_content/DigginDeep.Web",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

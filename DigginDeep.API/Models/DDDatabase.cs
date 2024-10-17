@@ -18,7 +18,7 @@ namespace DigginDeep.API.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(Configuration.GetConnectionString("DDDatabase"));
+            optionsBuilder.UseSqlite(Configuration.GetConnectionString("DD_DB"));
         }
 
         public DbSet<Student> Students { get; set; }

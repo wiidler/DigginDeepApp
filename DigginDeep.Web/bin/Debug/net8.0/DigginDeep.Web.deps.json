@@ -16,10 +16,7 @@
       },
       "DigginDeep.Models/1.0.0": {
         "runtime": {
-          "DigginDeep.Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DigginDeep.Models.dll": {}
         }
       }
     }
