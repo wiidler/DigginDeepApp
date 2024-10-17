@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DigginDeep.Models;
 using Microsoft.EntityFrameworkCore;
+using SQLitePCL;
 
 namespace DigginDeep.API.Models
 {
@@ -37,7 +38,7 @@ namespace DigginDeep.API.Models
 
         public async Task<Student> GetStudent(int id)
         {
-            var student = await _DDDatabase.Students.FirstOrDefaultAsync(s => s.Id == id);
+            var student = await _DDDatabase.Students.Include(e => e.Department).FirstOrDefaultAsync(s => s.Id == id);
             if (student == null)
             {
                 throw new Exception($"Student with id {id} not found.");
@@ -47,7 +48,7 @@ namespace DigginDeep.API.Models
 
         public async Task<IEnumerable<Student>> GetStudents()
         {
-            return await _DDDatabase.Students.ToListAsync();
+            return await _DDDatabase.Students.Include(e => e.Department).ToListAsync();
         }
 
         public async Task<Student> UpdateStudent(Student student)

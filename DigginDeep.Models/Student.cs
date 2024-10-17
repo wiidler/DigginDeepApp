@@ -11,5 +11,7 @@ namespace DigginDeep.Models
         public string Name { get; set; } = string.Empty;
         public string Major { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
+
+        public Department Department { get; set; } = new Department();
     }
 }
