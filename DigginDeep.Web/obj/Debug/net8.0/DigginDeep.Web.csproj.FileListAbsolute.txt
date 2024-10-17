@@ -31,4 +31,4 @@
 /home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/bin/Debug/net8.0/DigginDeep.Models.dll
 /home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/bin/Debug/net8.0/DigginDeep.Models.pdb
 /home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/DigginDeep.Web.csproj.AssemblyReference.cache
-/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/DigginDeep.Web.csproj.CopyComplete
+/home/will/Repos/Class/DigginDeepApp/DigginDeep.Web/obj/Debug/net8.0/DigginDe.62CB3EDE.Up2Date

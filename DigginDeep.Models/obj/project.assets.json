@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/will/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+      "projectUniqueName": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
       "projectName": "DigginDeep.Models",
-      "projectPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
-      "packagesPath": "/home/will/.nuget/packages/",
-      "outputPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/",
+      "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/workspaces/DigginDeepApp/DigginDeep.Models/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/will/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

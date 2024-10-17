@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/will/Repos/Class/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj": {}
+    "/workspaces/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj": {}
   },
   "projects": {
-    "/home/will/Repos/Class/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj": {
+    "/workspaces/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
+        "projectUniqueName": "/workspaces/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
         "projectName": "DigginDeep.API",
-        "projectPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
-        "packagesPath": "/home/will/.nuget/packages/",
-        "outputPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.API/obj/",
+        "projectPath": "/workspaces/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/workspaces/DigginDeepApp/DigginDeep.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/will/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
-                "projectPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj"
+              "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
+                "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.10, )"
             },
@@ -80,21 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
+    "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+        "projectUniqueName": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
         "projectName": "DigginDeep.Models",
-        "projectPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
-        "packagesPath": "/home/will/.nuget/packages/",
-        "outputPath": "/home/will/Repos/Class/DigginDeepApp/DigginDeep.Models/obj/",
+        "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/workspaces/DigginDeepApp/DigginDeep.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/will/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -133,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

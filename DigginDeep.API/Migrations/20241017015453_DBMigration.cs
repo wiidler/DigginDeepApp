@@ -7,7 +7,7 @@
 namespace DigginDeep.API.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialDBMigration : Migration
+    public partial class DBMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,11 +16,11 @@ namespace DigginDeep.API.Migrations
                 name: "Departments",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Major = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DepartmentHead = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DepartmentEmail = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Major = table.Column<string>(type: "TEXT", nullable: false),
+                    DepartmentHead = table.Column<string>(type: "TEXT", nullable: false),
+                    DepartmentEmail = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,11 +31,11 @@ namespace DigginDeep.API.Migrations
                 name: "Students",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Major = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Major = table.Column<string>(type: "TEXT", nullable: false),
+                    Email = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

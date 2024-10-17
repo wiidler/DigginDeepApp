@@ -4,19 +4,41 @@ using System.Linq;
 using System.Threading.Tasks;
 using DigginDeep.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DigginDeep.API.Models
 {
-    public class AppDbContext: DbContext
+    public class DDDatabase: DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options): base(options)
+        private readonly IConfiguration Configuration;
+        public DDDatabase(IConfiguration configuration)
         {
-            
+            Configuration = configuration;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite(Configuration.GetConnectionString("DDDatabase"));
         }
 
         public DbSet<Student> Students { get; set; }
 
         public DbSet<Department> Departments { get; set; }
+
+        public void Configure(EntityTypeBuilder<Student> modelBuilder)
+        {
+            modelBuilder.HasKey(s => s.Id);
+            modelBuilder.Property(s => s.Name).IsRequired();
+            modelBuilder.Property(s => s.Major).IsRequired();
+            modelBuilder.Property(s => s.Email).IsRequired();
+        }
+        public void Configure(EntityTypeBuilder<Department> modelBuilder)
+        {
+            modelBuilder.HasKey(d => d.Id);
+            modelBuilder.Property(d => d.Major).IsRequired();
+            modelBuilder.Property(d => d.DepartmentHead).IsRequired();
+            modelBuilder.Property(d => d.DepartmentEmail).IsRequired();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

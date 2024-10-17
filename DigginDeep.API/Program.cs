@@ -8,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Added to register AppDbContext with the DI container
-builder.Services.AddDbContext<AppDbContext>(options =>
+// Added to register DDDatabase with the DI container
+builder.Services.AddDbContext<DDDatabase>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 

@@ -15,7 +15,7 @@ namespace DigginDeep.API
         public void ConfigureServices(IServiceCollection services)
         {
             // Add DbContext service with SQL Server
-            services.AddDbContext<AppDbContext>(options =>
+            services.AddDbContext<DDDatabase>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Add controller support
