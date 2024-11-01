@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DigginDeep.API.Models
 {
-    public interface IOrganization
+    public interface IOrganizationRepository
     {
         Task<IEnumerable<Organization>> GetOrganizations();
 

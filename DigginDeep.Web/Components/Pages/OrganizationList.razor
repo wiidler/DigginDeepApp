@@ -1,7 +1,40 @@
-﻿@page "/organizationlist"
-
+@page "/organizationlist"
+@inject Services.IOrganizationService Service
 <h3>Student Organizations</h3>
 
-@code {
-    
+@if(organizations != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Email</th>
+                <th scope="col">Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var organization in organizations)
+            {
+                <tr>
+                    <td>@organization.Id</td>
+                    <td>@organization.Name</td>
+                    <td>@organization.Description</td>
+                    <td>@organization.Email</td>
+                    <td><a href="http://@organization.website" target="_blank">@organization.website</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code{
+    private IEnumerable<Models.Organization> organizations;
+
+    protected override async Task OnInitializedAsync()
+    {
+        organizations = (await Service.GetOrganizations()).ToList();
+    }
 }

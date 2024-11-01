@@ -12,7 +12,7 @@ namespace DigginDeep.API.Models
     {
         private readonly DDDatabase _DDDatabase;
 
-        public Organization(DDDatabase DDDatabase)
+        public OrganizationRepository(DDDatabase DDDatabase)
         {
             _DDDatabase = DDDatabase;
         }

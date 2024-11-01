@@ -9,6 +9,8 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<IStudentService, StudentService>(
 client => client.BaseAddress = new Uri("http://localhost:5000"));
+builder.Services.AddHttpClient<IOrganizationService, OrganizationService>(
+client => client.BaseAddress = new Uri("http://localhost:5000"));
 
 
 var app = builder.Build();

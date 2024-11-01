@@ -94,11 +94,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
+      "projectUniqueName": "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.Web/DigginDeep.Web.csproj",
       "projectName": "DigginDeep.Web",
-      "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
+      "projectPath": "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.Web/DigginDeep.Web.csproj",
       "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/",
+      "outputPath": "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/root/.nuget/NuGet/NuGet.Config"
@@ -113,8 +113,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
-              "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj"
+            "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.Models/DigginDeep.Models.csproj": {
+              "projectPath": "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.Models/DigginDeep.Models.csproj"
             }
           }
         }

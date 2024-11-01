@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<DDDatabase>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DD_DB")));
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IOrganizationRepository, OrganizationRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

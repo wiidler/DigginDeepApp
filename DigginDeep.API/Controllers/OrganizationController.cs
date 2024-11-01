@@ -11,38 +11,72 @@ namespace DigginDeep.API.Controllers
 
     public class OrganizationController : ControllerBase
     {
-        private readonly IOrganization _organizationRepository;
+        private readonly IOrganizationRepository _organizationRepository;
+
+        public OrganizationController(IOrganizationRepository organizationRepository)
+        {
+            _organizationRepository = organizationRepository;
+        }
 
         [HttpGet]
-        public async Task<IEnumerable<Organization>> GetOrganizations()
+        public async Task<ActionResult> GetOrganizations()
         {
-            return await _organizationRepository.GetOrganizations();
+            try
+            {
+                return Ok(await _organizationRepository.GetOrganizations());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<Organization> GetOrganization(int id)
+        public async Task<ActionResult> GetOrganization(int id)
         {
-            return await _organizationRepository.GetOrganization(id);
+            try
+            {
+                return Ok(await _organizationRepository.GetOrganization(id));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
         [HttpPost]
-        public async Task<Organization> AddOrganization(Organization organization)
+        public async Task<ActionResult> AddOrganization(Organization organization)
         {
-            return await _organizationRepository.AddOrganization(organization);
+            try
+            {
+                return Ok(await _organizationRepository.AddOrganization(organization));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
         [HttpPut]
-        public async Task<Organization> UpdateOrganization(Organization organization)
+        public async Task<ActionResult> UpdateOrganization(Organization organization)
         {
-            return await _organizationRepository.UpdateOrganization(organization);
+            try
+            {
+                return Ok(await _organizationRepository.UpdateOrganization(organization));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
         [HttpDelete("{id}")]
-        public void DeleteOrganization(int id)
+        public async Task<ActionResult> DeleteOrganization(int id)
         {
             try
             {
                 _organizationRepository.DeleteOrganization(id);
+                return Ok();
             }
             catch (Exception e)
             {

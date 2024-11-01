@@ -55,6 +55,67 @@ namespace DigginDeep.API.Migrations
                         });
                 });
 
+            modelBuilder.Entity("DigginDeep.Models.Organization", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("website")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Organizations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Designing and building a rover to compete in the University Rover Challenge",
+                            Email = "marsrover@mst.edu",
+                            Name = "Mars Rover Design Team",
+                            website = "marsrover.mst.edu"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "The Institute of Electrical and Electronics Engineers student chapter at Missouri S&T",
+                            Email = "ieee@mst.edu",
+                            Name = "IEEE",
+                            website = "ieee.mst.edu"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "The Association for Computing Machinery student chapter at Missouri S&T",
+                            Email = "acm@mst.edu",
+                            Name = "ACM",
+                            website = "acm.mst.edu"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Designing and building a rocket to compete in the Spaceport America Cup",
+                            Email = "rocket@mst.edu",
+                            Name = "Rocket Design Team",
+                            website = "rocket.mst.edu"
+                        });
+                });
+
             modelBuilder.Entity("DigginDeep.Models.Student", b =>
                 {
                     b.Property<int>("Id")

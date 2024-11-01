@@ -7,7 +7,7 @@
 namespace DigginDeep.API.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class OrganizationsFixes2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -25,6 +25,22 @@ namespace DigginDeep.API.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Departments", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Organizations",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    Email = table.Column<string>(type: "TEXT", nullable: false),
+                    website = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Organizations", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -52,6 +68,17 @@ namespace DigginDeep.API.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Organizations",
+                columns: new[] { "Id", "Description", "Email", "Name", "website" },
+                values: new object[,]
+                {
+                    { 1, "Designing and building a rover to compete in the University Rover Challenge", "marsrover@mst.edu", "Mars Rover Design Team", "marsrover.mst.edu" },
+                    { 2, "The Institute of Electrical and Electronics Engineers student chapter at Missouri S&T", "ieee@mst.edu", "IEEE", "ieee.mst.edu" },
+                    { 3, "The Association for Computing Machinery student chapter at Missouri S&T", "acm@mst.edu", "ACM", "acm.mst.edu" },
+                    { 4, "Designing and building a rocket to compete in the Spaceport America Cup", "rocket@mst.edu", "Rocket Design Team", "rocket.mst.edu" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Students",
                 columns: new[] { "Id", "Email", "Major", "Name" },
                 values: new object[,]
@@ -67,6 +94,9 @@ namespace DigginDeep.API.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Departments");
+
+            migrationBuilder.DropTable(
+                name: "Organizations");
 
             migrationBuilder.DropTable(
                 name: "Students");

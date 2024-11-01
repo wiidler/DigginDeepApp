@@ -72,6 +72,14 @@ namespace DigginDeep.API.Models
                 new Department { Id = 2, Major = "Computer Engineering", DepartmentHead = "Dr. Bruce McMillin", DepartmentEmail = "bmcmillin@mst.edu"});
     
             // Organizations
+            modelBuilder.Entity<Organization>().HasData(
+                new Organization { Id = 1, Name = "Mars Rover Design Team", Email = "marsrover@mst.edu", Description = "Designing and building a rover to compete in the University Rover Challenge", website = "marsrover.mst.edu"});
+            modelBuilder.Entity<Organization>().HasData(
+                new Organization { Id = 2, Name = "IEEE", Email = "ieee@mst.edu", Description = "The Institute of Electrical and Electronics Engineers student chapter at Missouri S&T", website = "ieee.mst.edu"});
+            modelBuilder.Entity<Organization>().HasData(
+                new Organization { Id = 3, Name = "ACM", Email = "acm@mst.edu", Description = "The Association for Computing Machinery student chapter at Missouri S&T", website = "acm.mst.edu"});
+            modelBuilder.Entity<Organization>().HasData(
+                new Organization { Id = 4, Name = "Rocket Design Team", Email = "rocket@mst.edu", Description = "Designing and building a rocket to compete in the Spaceport America Cup", website = "rocket.mst.edu"});
 
         }
     }
