@@ -22,3 +22,15 @@
 /workspaces/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/refint/DigginDeep.Models.dll
 /workspaces/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.pdb
 /workspaces/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/ref/DigginDeep.Models.dll
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\bin\Debug\net8.0\DigginDeep.Models.deps.json
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\bin\Debug\net8.0\DigginDeep.Models.dll
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\bin\Debug\net8.0\DigginDeep.Models.pdb
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.AssemblyInfoInputs.cache
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.AssemblyInfo.cs
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.csproj.CoreCompileInputs.cache
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.sourcelink.json
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.dll
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\refint\DigginDeep.Models.dll
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\DigginDeep.Models.pdb
+C:\Users\Will\Desktop\GitHub\Class\DigginDeepApp\DigginDeep.Models\obj\Debug\net8.0\ref\DigginDeep.Models.dll

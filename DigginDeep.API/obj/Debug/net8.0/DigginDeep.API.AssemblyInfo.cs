@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigginDeep.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6150191c111cf1c0f480e8ead0ef4b63fe0e226")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1b843f5aabc8d00dc70f165c1dd4fb9ed1ec0a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigginDeep.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigginDeep.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
