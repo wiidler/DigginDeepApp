@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigginDeep.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1b843f5aabc8d00dc70f165c1dd4fb9ed1ec0a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+929b1e94d7ed924b63f66a8f0f68dc945b78bfa1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigginDeep.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigginDeep.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

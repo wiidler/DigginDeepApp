@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/OrganizationList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Pcmdhbml6YXRpb25MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/StudentList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9TdHVkZW50TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

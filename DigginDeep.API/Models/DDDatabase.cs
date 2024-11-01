@@ -25,6 +25,8 @@ namespace DigginDeep.API.Models
 
         public DbSet<Department> Departments { get; set; }
 
+        public DbSet<Organization> Organizations { get; set; }
+
         public void Configure(EntityTypeBuilder<Student> modelBuilder)
         {
             modelBuilder.HasKey(s => s.Id);
@@ -38,6 +40,15 @@ namespace DigginDeep.API.Models
             modelBuilder.Property(d => d.Major).IsRequired();
             modelBuilder.Property(d => d.DepartmentHead).IsRequired();
             modelBuilder.Property(d => d.DepartmentEmail).IsRequired();
+        }
+
+        public void Configure(EntityTypeBuilder<Organization> modelBuilder)
+        {
+            modelBuilder.HasKey(o => o.Id);
+            modelBuilder.Property(o => o.Name).IsRequired();
+            modelBuilder.Property(o => o.Email).IsRequired();
+            modelBuilder.Property(o => o.Description).IsRequired();
+            modelBuilder.Property(o => o.website).IsRequired();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -60,7 +71,7 @@ namespace DigginDeep.API.Models
             modelBuilder.Entity<Department>().HasData(
                 new Department { Id = 2, Major = "Computer Engineering", DepartmentHead = "Dr. Bruce McMillin", DepartmentEmail = "bmcmillin@mst.edu"});
     
-
+            // Organizations
 
         }
     }
