@@ -1,39 +1,8 @@
 ﻿@page "/"
 @inject Services.IStudentService Service
 
-<h3>Student List</h3>
-@if(students != null)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Major</th>
-                <th scope="col">Email</th>
-                <th scope="col">Department Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var student in students)
-            {
-                <tr>
-                    <td>@student.Id</td>
-                    <td>@student.Name</td>
-                    <td>@student.Major</td>
-                    <td>@student.Email</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+<h3>Welcome to Diggin' Deep</h3>
+<h5>Select one of the items on the left bar to get started.</h5>
 
 
-@code {
-    private IEnumerable<Models.Student> students;
-
-    protected override async Task OnInitializedAsync()
-    {
-        students = await Service.GetStudents();
-    }
-}
+@code {}

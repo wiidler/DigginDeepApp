@@ -1,0 +1,75 @@
+﻿@page "/ToDo"
+@inject Services.IToDoListService Service
+
+<h3>ToDoList</h3>
+
+@if (todos == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>IsComplete</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var todo in todos)
+            {
+                <tr>
+                    <td>@todo.Task</td>
+                    <td>@todo.IsComplete</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => Complete(todo.Id)">Complete</button>
+                        <button class="btn btn-danger" @onclick="() => Delete(todo.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Models.ToDoList> todos = Enumerable.Empty<Models.ToDoList>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshList();
+    }
+
+    private async Task RefreshList()
+    {
+        todos = (await Service.GetToDoLists())?.ToList() ?? Enumerable.Empty<Models.ToDoList>();
+        StateHasChanged();
+    }
+
+    private async Task Delete(int id)
+    {
+        try
+        {
+            await Service.DeleteToDoList(id);
+            await RefreshList();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting todo: {ex.Message}");
+        }
+    }
+
+    private async Task Complete(int id)
+    {
+        try
+        {
+            await Service.MarkTaskComplete(id);
+            await RefreshList();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error completing todo: {ex.Message}");
+        }
+    }
+}

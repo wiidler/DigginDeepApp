@@ -14,6 +14,7 @@ builder.Services.AddDbContext<DDDatabase>(options => options.UseSqlite(builder.C
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IOrganizationRepository, OrganizationRepository>();
+builder.Services.AddScoped<IToDoListRepository, ToDoListRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

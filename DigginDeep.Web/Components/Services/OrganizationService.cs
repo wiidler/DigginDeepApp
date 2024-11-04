@@ -20,5 +20,30 @@ namespace DigginDeep.Web.Components.Services
         {
             return _httpClient.GetFromJsonAsync<IEnumerable<Organization>>("api/Organization")!;
         }
+
+        Task<Organization> IOrganizationService.GetOrganization(int id)
+        {
+            return _httpClient.GetFromJsonAsync<Organization>($"api/Organization/{id}")!;
+        }
+
+        Task<Organization> IOrganizationService.CreateOrganization(Organization organization)
+        {
+            return _httpClient.PostAsJsonAsync("api/Organization", organization).Result.Content.ReadFromJsonAsync<Organization>()!;
+        }
+
+        Task<Organization> IOrganizationService.UpdateOrganization(int id, Organization organization)
+        {
+            return _httpClient.PutAsJsonAsync($"api/Organization/{id}", organization).Result.Content.ReadFromJsonAsync<Organization>()!;
+        }
+
+        Task IOrganizationService.DeleteOrganization(int id)
+        {
+            return _httpClient.DeleteAsync($"api/Organization/{id}");
+        }
+
+        Task<IEnumerable<Organization>> IOrganizationService.Search(string name)
+        {
+            return _httpClient.GetFromJsonAsync<IEnumerable<Organization>>($"api/Organization/Search/{name}")!;
+        }
     }
 }

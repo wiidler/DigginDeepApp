@@ -27,6 +27,8 @@ namespace DigginDeep.API.Models
 
         public DbSet<Organization> Organizations { get; set; }
 
+        public DbSet<ToDoList> ToDoLists { get; set; }
+
         public void Configure(EntityTypeBuilder<Student> modelBuilder)
         {
             modelBuilder.HasKey(s => s.Id);
@@ -49,6 +51,15 @@ namespace DigginDeep.API.Models
             modelBuilder.Property(o => o.Email).IsRequired();
             modelBuilder.Property(o => o.Description).IsRequired();
             modelBuilder.Property(o => o.website).IsRequired();
+        }
+
+        public void Configure(EntityTypeBuilder<ToDoList> modelBuilder)
+        {
+            modelBuilder.HasKey(t => t.Id);
+            modelBuilder.Property(t => t.Task).IsRequired();
+            modelBuilder.Property(t => t.Description).IsRequired();
+            modelBuilder.Property(t => t.DueDate).IsRequired();
+            modelBuilder.Property(t => t.IsComplete).IsRequired();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -81,6 +92,9 @@ namespace DigginDeep.API.Models
             modelBuilder.Entity<Organization>().HasData(
                 new Organization { Id = 4, Name = "Rocket Design Team", Email = "rocket@mst.edu", Description = "Designing and building a rocket to compete in the Spaceport America Cup", website = "rocket.mst.edu"});
 
+            // ToDoLists
+            modelBuilder.Entity<ToDoList>().HasData(
+                new ToDoList { Id = 1, Task = "Complete Homework", Description = "Complete the homework for the week", DueDate = DateTime.Today.AddDays(7), IsComplete = false});
         }
     }
 }

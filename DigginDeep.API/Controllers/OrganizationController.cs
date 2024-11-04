@@ -43,6 +43,29 @@ namespace DigginDeep.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
+        
+        [HttpGet("Search/{searchTerm}")]
+        public async Task<ActionResult<IEnumerable<Organization>>> SearchOrganizations(string searchTerm)
+        {
+            try
+            {
+                var organizations = await _organizationRepository.GetOrganizations();
+                if (string.IsNullOrWhiteSpace(searchTerm))
+                    return Ok(organizations);
+                    
+                var results = organizations.Where(o => 
+                    o.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    o.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    o.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+                    
+                return Ok(results);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, 
+                    "Error retrieving data from database");
+            }
+        }
 
         [HttpPost]
         public async Task<ActionResult> AddOrganization(Organization organization)

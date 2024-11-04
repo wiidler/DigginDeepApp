@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "grPFHY3l3ssnLkctz4QfnFZe5PLHJiC63mmcUfnxb6n28vQJYQ4jW7K1i+dzsmZ05ZH7x5ASGrxZNeQWvFl0Ww==",
+  "dgSpecHash": "q3G7vp/kCe8fsHHeusyh7QXfdbB8t13Hc1YW3xCDFEFk+gMm7wSgCKHZH0bNfdazHGlcW7FFfDw46sSyEVpmPw==",
   "success": true,
-  "projectFilePath": "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.Web/DigginDeep.Web.csproj",
+  "projectFilePath": "/workspaces/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
   "expectedPackageFiles": [
     "/root/.nuget/packages/microsoft.aspnetcore.blazor.httpclient/3.2.0-preview3.20168.3/microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
     "/root/.nuget/packages/system.text.json/4.7.1/system.text.json.4.7.1.nupkg.sha512"

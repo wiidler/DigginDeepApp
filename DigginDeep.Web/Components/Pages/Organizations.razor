@@ -1,6 +1,8 @@
-@page "/organizationlist"
+@page "/organizations"
 @inject Services.IOrganizationService Service
+
 <h3>Student Organizations</h3>
+
 
 @if(organizations != null)
 {
@@ -29,10 +31,9 @@
     </table>
 }
 
-
-@code{
+@code {
     private IEnumerable<Models.Organization> organizations;
-
+    
     protected override async Task OnInitializedAsync()
     {
         organizations = (await Service.GetOrganizations()).ToList();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jt0hPo6IOk13ZGDLn/XBcjTgr3rTLqGv3PdMLo1YQMd3BMxysPRYgjfvVIJYHuihpldqPa90R9vvaZwzDJtnGw==",
+  "dgSpecHash": "SIIp/oIogKZ43mhH247ZymCwzamzSmhXgyrHOiVWKaLPW5K4UFxvIbA7z6Iv3E+La0sZ2i74XvXV5cc3aY/j3A==",
   "success": true,
-  "projectFilePath": "/workspaces/d823325127ff86842d786355f7218f73f4043b58c4b75b5c938acdb895cea028/DigginDeep.API/DigginDeep.API.csproj",
+  "projectFilePath": "/workspaces/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
   "expectedPackageFiles": [
     "/root/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/root/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
