@@ -19,7 +19,7 @@
 
     private async Task OnSearchClicked()
     {
-        Console.WriteLine($"Button clicked with search term: {searchItem}");
+        Console.WriteLine($"Button clicked with search term: {searchItem}"); //trying to see if the button is even working
         await OnSearch.InvokeAsync(searchItem);
     }
 }

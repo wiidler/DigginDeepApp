@@ -55,19 +55,19 @@ else
     protected override async Task OnInitializedAsync()
     {
         organizations = (await Service.GetOrganizations()).ToList();
-        filteredOrganizations = organizations; // Initialize with all organizations
+        filteredOrganizations = organizations; 
     }
 
     private async Task SearchOrganizations(string searchTerm)
     {
-        Console.WriteLine($"Searching for: {searchTerm}"); // Log the search term
+        Console.WriteLine($"Searching for: {searchTerm}"); // Log the search term to see if button is working
         if (string.IsNullOrWhiteSpace(searchTerm))
         {
-            filteredOrganizations = organizations; // Reset to all organizations
+            filteredOrganizations = organizations; 
         }
         else
         {
-            // Call the SearchOrganizations method from the service
+            
             filteredOrganizations = await Service.SearchOrganizations(searchTerm);
         }
 
