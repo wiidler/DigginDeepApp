@@ -17,7 +17,7 @@ namespace DigginDeep.Web.Components.Services
 
         Task DeleteOrganization(int id);
 
-        Task<IEnumerable<Organization>> Search(string name);
+        Task<IEnumerable<Organization>> SearchOrganizations(string name);
 
 
     }

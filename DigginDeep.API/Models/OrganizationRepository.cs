@@ -49,11 +49,26 @@ namespace DigginDeep.API.Models
             return await _DDDatabase.Organizations.ToListAsync();
         }
 
+        public async Task<IEnumerable<Organization>> SearchOrganizations(string searchTerm)
+    {
+        var organizations = await _DDDatabase.Organizations.ToListAsync();
+        return organizations.Where(o =>
+            o.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            o.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            o.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+    }
+
+
+      
+
         public async Task<Organization> UpdateOrganization(Organization organization)
         {
             var result = _DDDatabase.Organizations.Update(organization);
             await _DDDatabase.SaveChangesAsync();
             return result.Entity;
         }
-    }
+
+        
+            
+}
 }
