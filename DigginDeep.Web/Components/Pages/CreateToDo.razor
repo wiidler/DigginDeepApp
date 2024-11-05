@@ -1,0 +1,17 @@
+@* @page "/createtodo"
+@inject Services.IToDoListService Service
+@inject NavigationManager navManager
+
+<h3>Create New Task</h3>
+
+<Form ButtonText= "Create Task" todo="@todo" OnValidSubmit="@CreateTask" />
+
+@code {
+    ToDoList todo = new ToDoList();
+
+    async Task CreateTask()
+    {
+        await Service.CreateToDoList(todo);
+        navManager.NavigateTo("/todo");
+    }
+} *@
