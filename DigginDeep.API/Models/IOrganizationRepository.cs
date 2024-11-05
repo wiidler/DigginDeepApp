@@ -13,10 +13,15 @@ namespace DigginDeep.API.Models
 
         Task<Organization> GetOrganization(int id);
 
+        Task<IEnumerable<Organization>> SearchOrganizations(string searchTerm);
+
         Task<Organization> AddOrganization(Organization organization);
 
         Task<Organization> UpdateOrganization(Organization organization);
 
+       
         void DeleteOrganization(int id);
+
+
     }
 }

@@ -1,0 +1,25 @@
+@typeparam TEntity
+
+<input class="form-control" style="max-width: 600px;" placeholder="Search..."
+    @bind="searchItem" />
+
+<button class = "form-control" style="max-width: 300px;"
+        @onclick="OnSearchClicked">
+    Search
+</button>
+
+@code {
+    [Parameter]
+    public List<TEntity> Item { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnSearch { get; set; }
+
+    private string searchItem;
+
+    private async Task OnSearchClicked()
+    {
+        Console.WriteLine($"Button clicked with search term: {searchItem}");
+        await OnSearch.InvokeAsync(searchItem);
+    }
+}

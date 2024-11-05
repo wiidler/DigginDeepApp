@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2It0zxjWqumNcgCUEdaG4u20OsgBNEj6p7GKAIgRwuvzc5GgLiwP+SPZYuBnTz/s4PWbobq9w9L3YhkwxcXGyg==",
+  "dgSpecHash": "K7ENiBytnNk1MTH3wHGeId/6VBqqrEePiYPKxvHiJHAEw/+ALzKtTV60ceqQnNkHgb6K1hjbDQrETIgxBk7QoA==",
   "success": true,
-  "projectFilePath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+  "projectFilePath": "/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

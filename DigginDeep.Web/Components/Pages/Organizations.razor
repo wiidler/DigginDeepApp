@@ -3,9 +3,13 @@
 
 <h3>Student Organizations</h3>
 
-
-@if(organizations != null)
+@if (filteredOrganizations != null)
 {
+    <div class="w-100">
+        <DigginDeep.Web.Components.Shared.Search_Box
+            Item="@filteredOrganizations.ToList()" 
+            OnSearch="SearchOrganizations" />
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -17,25 +21,57 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var organization in organizations)
+            @if (filteredOrganizations.Any())
+            {
+                @foreach (var organization in filteredOrganizations)
+                {
+                    <tr>
+                        <td>@organization.Id</td>
+                        <td>@organization.Name</td>
+                        <td>@organization.Description</td>
+                        <td>@organization.Email</td>
+                        <td><a href="http://@organization.website" target="_blank">@organization.website</a></td>
+                    </tr>
+                }
+            }
+            else
             {
                 <tr>
-                    <td>@organization.Id</td>
-                    <td>@organization.Name</td>
-                    <td>@organization.Description</td>
-                    <td>@organization.Email</td>
-                    <td><a href="http://@organization.website" target="_blank">@organization.website</a></td>
+                    <td colspan="5">No organizations found.</td>
                 </tr>
             }
         </tbody>
     </table>
 }
+else
+{
+    <p>Loading organizations...</p>
+}
 
 @code {
-    private IEnumerable<Models.Organization> organizations;
-    
+    private List<Models.Organization> organizations = new List<Models.Organization>();
+    private IEnumerable<Models.Organization> filteredOrganizations;
+
     protected override async Task OnInitializedAsync()
     {
         organizations = (await Service.GetOrganizations()).ToList();
+        filteredOrganizations = organizations; // Initialize with all organizations
+    }
+
+    private async Task SearchOrganizations(string searchTerm)
+    {
+        Console.WriteLine($"Searching for: {searchTerm}"); // Log the search term
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            filteredOrganizations = organizations; // Reset to all organizations
+        }
+        else
+        {
+            // Call the SearchOrganizations method from the service
+            filteredOrganizations = await Service.SearchOrganizations(searchTerm);
+        }
+
+        // Notify the UI to re-render
+        StateHasChanged();
     }
 }

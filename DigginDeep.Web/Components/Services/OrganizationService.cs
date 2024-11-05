@@ -41,7 +41,7 @@ namespace DigginDeep.Web.Components.Services
             return _httpClient.DeleteAsync($"api/Organization/{id}");
         }
 
-        Task<IEnumerable<Organization>> IOrganizationService.Search(string name)
+        Task<IEnumerable<Organization>> IOrganizationService.SearchOrganizations(string name)
         {
             return _httpClient.GetFromJsonAsync<IEnumerable<Organization>>($"api/Organization/Search/{name}")!;
         }
