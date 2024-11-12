@@ -9,19 +9,20 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DigginDeep.Web
 build_property.RootNamespace = DigginDeep.Web
-build_property.ProjectDir = /home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/
+build_property.ProjectDir = /workspaces/DigginDeepApp/DigginDeep.Web/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web
+build_property.MSBuildProjectDirectory = /workspaces/DigginDeepApp/DigginDeep.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/App.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 [/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/CreateToDo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DcmVhdGVUb0RvLnJhem9y
@@ -43,13 +44,21 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Pages/Organizations.razor]
 >>>>>>> origin/main
+=======
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/Organizations.razor]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Pcmdhbml6YXRpb25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Pages/StudentList.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/StudentList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9TdHVkZW50TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 [/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/ToDoDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ub0RvRGV0YWlscy5yYXpvcg==
@@ -59,25 +68,28 @@ build_metadata.AdditionalFiles.CssScope =
 =======
 [/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Pages/ToDoList.razor]
 >>>>>>> origin/main
+=======
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Pages/ToDoList.razor]
+>>>>>>> Stashed changes
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ub0RvTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Routes.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Shared/Search_Box.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Shared/Search_Box.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TaGFyZWQvU2VhcmNoX0JveC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/_Imports.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Layout/MainLayout.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ouq7wny75b
 
-[/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Web/Components/Layout/NavMenu.razor]
+[/workspaces/DigginDeepApp/DigginDeep.Web/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-30z3l3f7sd

@@ -13,11 +13,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigginDeep.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72221e96661559d717054dab10176a9d63dcd968")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+859036962c82728eadb795f20b9d5be8993e54c2")]
 >>>>>>> origin/main
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+799c562cf91f6521a0fb4f4329250919465013db")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("DigginDeep.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigginDeep.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
