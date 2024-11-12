@@ -22,7 +22,7 @@ else
             <div class="card-footer">
                 <button class="btn btn-primary">Mark As Completed</button>
                 <button class="btn btn-secondary">Edit</button>
-                <button class="btn btn-danger" @onclick="DeleteEmployee" >Delete</button>
+                <button class="btn btn-danger" @onclick="DeleteTask">Delete</button>
             </div>
         </div>
     </div>
@@ -41,9 +41,9 @@ else
         todo = await Service.GetToDoList(int.Parse(Id));
     }
 
-    protected async void DeleteEmployee()
+    protected async void DeleteTask()
     {
-        await Service.DeleteToDoList(todo.Id);
+        await Service.DeleteToDoList(int.Parse(Id));
         navManager.NavigateTo("/todo");
     }
 }

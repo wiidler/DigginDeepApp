@@ -38,7 +38,7 @@ namespace DigginDeep.Web.Components.Services
             return await response.Content.ReadFromJsonAsync<ToDoList>();
         }
 
-        public async Task DeleteToDoList(int id) // Changed from void to Task
+        public async Task DeleteToDoList(int id)
         {
             await _httpClient.DeleteAsync($"api/todolist/{id}");
         }

@@ -1,17 +1,27 @@
-@* @page "/createtodo"
-@inject Services.IToDoListService Service
+@page "/createtodo"
+@inject IToDoListService Service
 @inject NavigationManager navManager
+@using DigginDeep.Models
 
 <h3>Create New Task</h3>
 
-<Form ButtonText= "Create Task" todo="@todo" OnValidSubmit="@CreateTask" />
+<Form ButtonText="Create Task" todo="@todo" OnValidSubmit="@CreateTask" FormName="createToDoForm" />
+
 
 @code {
-    ToDoList todo = new ToDoList();
+    DigginDeep.Models.ToDoList todo = new DigginDeep.Models.ToDoList();
 
     async Task CreateTask()
     {
-        await Service.CreateToDoList(todo);
+        Console.WriteLine("Creating Task");
+        Console.WriteLine($"Id: {todo.Id}");
+        Console.WriteLine($"Todo: {todo}");
+        Console.WriteLine($"Task: {todo.Task}");
+        Console.WriteLine($"Description: {todo.Description}");
+        Console.WriteLine($"Due Date: {todo.DueDate}");
+        Console.WriteLine($"Is Complete: {todo.IsComplete}");
+
+        await Service.AddToDoList(todo);
         navManager.NavigateTo("/todo");
     }
-} *@
+}
