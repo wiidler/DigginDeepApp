@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigginDeep.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a81dfb00e3d4e2d5375a45ecf7ba9baf112fa9d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3788a6529d4da27d19cbe2041a1340ba9f3e3239")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigginDeep.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigginDeep.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
