@@ -58,3 +58,15 @@ C:/Users/Will/Desktop/GitHub/Class/DigginDeepApp/DigginDeep.Models/obj/Debug/net
 /home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/refint/DigginDeep.Models.dll
 /home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.pdb
 /home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/ref/DigginDeep.Models.dll
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/bin/Debug/net8.0/DigginDeep.Models.deps.json
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/bin/Debug/net8.0/DigginDeep.Models.dll
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/bin/Debug/net8.0/DigginDeep.Models.pdb
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.GeneratedMSBuildEditorConfig.editorconfig
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.AssemblyInfoInputs.cache
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.AssemblyInfo.cs
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.csproj.CoreCompileInputs.cache
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.sourcelink.json
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.dll
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/refint/DigginDeep.Models.dll
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/DigginDeep.Models.pdb
+/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/Debug/net8.0/ref/DigginDeep.Models.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+n9jUHavqQfjsYOAaLVPEo9ptsw2rsEzDcIqpsI+BSX0ckkBAOmed76QFR9gPdmkpeUKV+5BS4qzf3idJfRuqQ==",
+  "dgSpecHash": "SqrEJxq80UULj9Z95tjoFxQMCGKj6GYeHdr7Bog4aIOMwf1tYc8+eSTYSr1upzm/EZrPXsy+agDjgpzOTYYm8w==",
   "success": true,
-  "projectFilePath": "/home/dbealer/Documents/Diggin_Deep/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
+  "projectFilePath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.API/DigginDeep.API.csproj",
   "expectedPackageFiles": [
     "/home/dbealer/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/home/dbealer/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

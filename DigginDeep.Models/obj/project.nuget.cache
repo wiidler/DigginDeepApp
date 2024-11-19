@@ -1,12 +1,15 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "hUEY78SWJqrjYQZAwcZ+Z0tXCBXK053CWUILjhPZUcBuZlOYtBZxNoNc1x+gfH55dFCPriRNSA/zUOLSp/XXdg==",
-=======
-  "dgSpecHash": "2It0zxjWqumNcgCUEdaG4u20OsgBNEj6p7GKAIgRwuvzc5GgLiwP+SPZYuBnTz/s4PWbobq9w9L3YhkwxcXGyg==",
->>>>>>> Stashed changes
+  "dgSpecHash": "1uPxr+ZmWnvwgkxWwaCUWNRwMK+8Dt5ntElW1OUsaptjlHKdxM8rf6Y4djrPcrqIMIswr2xe8nQFS2LQErGU+A==",
   "success": true,
-  "projectFilePath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+  "projectFilePath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

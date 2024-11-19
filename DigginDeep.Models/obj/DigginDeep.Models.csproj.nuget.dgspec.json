@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {}
+    "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {}
   },
   "projects": {
-    "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
+    "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+        "projectUniqueName": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
         "projectName": "DigginDeep.Models",
-        "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/workspaces/DigginDeepApp/DigginDeep.Models/obj/",
+        "projectPath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj",
+        "packagesPath": "/home/dbealer/.nuget/packages/",
+        "outputPath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/dbealer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,11 +53,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
         }
       }
     }
