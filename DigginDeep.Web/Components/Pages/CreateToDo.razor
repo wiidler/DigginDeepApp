@@ -1,18 +1,30 @@
 @page "/createtodo"
+@page "/createtodo/{id}"
 @inject IToDoListService Service
 @inject NavigationManager navManager
 @using DigginDeep.Models
 
-<h3>Create New Task</h3>
+<h3>@(Id == null ? "Create New Task" : "Edit Task")</h3>
 
-<Form ButtonText="Create Task" 
+<Form ButtonText="@(Id == null ? "Create Task" : "Update Task")"
       todo="@todo" 
-      OnValidSubmit="@(async () => await CreateTask())"
-      FormName="createToDoForm" 
+      OnValidSubmit="@(async () => await HandleSubmit())"
+      FormName="todoForm" 
       TodoChanged="@HandleTodoChanged" />
 
 @code {
+    [Parameter]
+    public string? Id { get; set; }
+
     private DigginDeep.Models.ToDoList todo = new DigginDeep.Models.ToDoList();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(Id))
+        {
+            todo = await Service.GetToDoList(int.Parse(Id));
+        }
+    }
 
     private void HandleTodoChanged(DigginDeep.Models.ToDoList updatedTodo)
     {
@@ -20,32 +32,26 @@
         StateHasChanged();
     }
 
-    async Task CreateTask()
-{
-    Console.WriteLine($"Creating task with values: Task={todo.Task}, Description={todo.Description}");
-    
-    if (todo == null)
+    async Task HandleSubmit()
     {
-        Console.WriteLine("Todo object is null");
-        return;
-    }
-
-    try 
-    {
-        if (!string.IsNullOrWhiteSpace(todo.Task) && !string.IsNullOrWhiteSpace(todo.Description))
+        try 
         {
-            Console.WriteLine("Calling AddToDoList");
-            await Service.AddToDoList(todo);
-            navManager.NavigateTo("/todo");
+            if (!string.IsNullOrWhiteSpace(todo.Task) && !string.IsNullOrWhiteSpace(todo.Description))
+            {
+                if (string.IsNullOrEmpty(Id))
+                {
+                    await Service.AddToDoList(todo);
+                }
+                else
+                {
+                    await Service.UpdateToDoList(todo);
+                }
+                navManager.NavigateTo("/todo");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine($"Validation failed: Task={todo.Task?.Length ?? 0}, Description={todo.Description?.Length ?? 0}");
+            Console.WriteLine($"Error saving task: {ex.Message}");
         }
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Error creating task: {ex.Message}");
-    }
-}
 }

@@ -13,7 +13,7 @@ namespace DigginDeep.Web.Components.Services
 
         public ToDoListService(HttpClient httpClient)
         {
-            _httpClient = httpClient;
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         }
 
         public async Task<IEnumerable<ToDoList>> GetToDoLists()
@@ -38,9 +38,10 @@ namespace DigginDeep.Web.Components.Services
             return await response.Content.ReadFromJsonAsync<ToDoList>();
         }
 
-        public async Task DeleteToDoList(int id)
+        public async Task<bool> DeleteToDoList(int id)
         {
-            await _httpClient.DeleteAsync($"api/todolist/{id}");
+            var response = await _httpClient.DeleteAsync($"api/todolist/{id}");
+            return response.IsSuccessStatusCode;
         }
 
         public async Task<IEnumerable<ToDoList>> Search(string task)
@@ -78,14 +79,18 @@ namespace DigginDeep.Web.Components.Services
             return await _httpClient.GetFromJsonAsync<ToDoList[]>("api/todolist/thisweek");
         }
 
-        public async Task<IEnumerable<ToDoList>> MarkTaskComplete(int id)
+        public async Task<ToDoList> MarkTaskComplete(int id)
         {
-            return await _httpClient.GetFromJsonAsync<ToDoList[]>($"api/todolist/complete/{id}");
+            var response = await _httpClient.PutAsync($"api/todolist/complete/{id}", null);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<ToDoList>();
         }
 
-        public async Task<IEnumerable<ToDoList>> MarkTaskIncomplete(int id)
+        public async Task<ToDoList> MarkTaskIncomplete(int id)
         {
-            return await _httpClient.GetFromJsonAsync<ToDoList[]>($"api/todolist/incomplete/{id}");
+            var response = await _httpClient.PutAsync($"api/todolist/incomplete/{id}", null);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<ToDoList>();
         }
     }
 }

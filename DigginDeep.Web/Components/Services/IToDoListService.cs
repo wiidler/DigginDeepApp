@@ -17,7 +17,7 @@ namespace DigginDeep.Web.Components.Services
 
         Task<ToDoList> UpdateToDoList(ToDoList toDoList);
 
-        Task DeleteToDoList(int id);
+        Task<bool> DeleteToDoList(int id);
 
         Task<IEnumerable<ToDoList>> Search(string task);
 
@@ -33,8 +33,8 @@ namespace DigginDeep.Web.Components.Services
 
         Task<IEnumerable<ToDoList>> GetTasksDueThisWeek();
 
-        Task<IEnumerable<ToDoList>> MarkTaskComplete(int id);
+        Task<ToDoList> MarkTaskComplete(int id);
 
-        Task<IEnumerable<ToDoList>> MarkTaskIncomplete(int id);
+        Task<ToDoList> MarkTaskIncomplete(int id);
     }
 }
