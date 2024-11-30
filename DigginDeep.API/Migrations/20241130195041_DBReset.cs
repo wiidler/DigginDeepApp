@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -7,7 +8,7 @@
 namespace DigginDeep.API.Migrations
 {
     /// <inheritdoc />
-    public partial class OrganizationsFixes2 : Migration
+    public partial class DBReset : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -58,6 +59,22 @@ namespace DigginDeep.API.Migrations
                     table.PrimaryKey("PK_Students", x => x.Id);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ToDoLists",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Task = table.Column<string>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    DueDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    IsComplete = table.Column<bool>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ToDoLists", x => x.Id);
+                });
+
             migrationBuilder.InsertData(
                 table: "Departments",
                 columns: new[] { "Id", "DepartmentEmail", "DepartmentHead", "Major" },
@@ -87,6 +104,11 @@ namespace DigginDeep.API.Migrations
                     { 2, "janedoe@mst.edu", "Computer Engineering", "Jane Doe" },
                     { 3, "johnsmith@mst.edu", "Information Science and Technology", "John Smith" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "ToDoLists",
+                columns: new[] { "Id", "Description", "DueDate", "IsComplete", "Task" },
+                values: new object[] { 1, "Complete the homework for the week", new DateTime(2024, 12, 7, 0, 0, 0, 0, DateTimeKind.Local), false, "Complete Homework" });
         }
 
         /// <inheritdoc />
@@ -100,6 +122,9 @@ namespace DigginDeep.API.Migrations
 
             migrationBuilder.DropTable(
                 name: "Students");
+
+            migrationBuilder.DropTable(
+                name: "ToDoLists");
         }
     }
 }

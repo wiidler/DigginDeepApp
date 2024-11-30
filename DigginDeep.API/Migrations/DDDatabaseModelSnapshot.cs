@@ -192,7 +192,7 @@ namespace DigginDeep.API.Migrations
                         {
                             Id = 1,
                             Description = "Complete the homework for the week",
-                            DueDate = new DateTime(2024, 11, 11, 0, 0, 0, 0, DateTimeKind.Local),
+                            DueDate = new DateTime(2024, 12, 7, 0, 0, 0, 0, DateTimeKind.Local),
                             IsComplete = false,
                             Task = "Complete Homework"
                         });

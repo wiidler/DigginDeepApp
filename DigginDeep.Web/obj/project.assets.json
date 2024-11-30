@@ -89,19 +89,19 @@
     ]
   },
   "packageFolders": {
-    "/home/dbealer/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
+      "projectUniqueName": "/workspaces/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
       "projectName": "DigginDeep.Web",
-      "projectPath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
-      "packagesPath": "/home/dbealer/.nuget/packages/",
-      "outputPath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Web/obj/",
+      "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Web/DigginDeep.Web.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/workspaces/DigginDeepApp/DigginDeep.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/dbealer/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -113,8 +113,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
-              "projectPath": "/home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj"
+            "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj": {
+              "projectPath": "/workspaces/DigginDeepApp/DigginDeep.Models/DigginDeep.Models.csproj"
             }
           }
         }
@@ -153,16 +153,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/dbealer/Documents/TEst/DigginDeepApp/DigginDeep.Web/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

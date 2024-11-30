@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigginDeep.API.Migrations
 {
     [DbContext(typeof(DDDatabase))]
-    [Migration("20241105042243_OrgizationUpdate")]
-    partial class OrgizationUpdate
+    [Migration("20241130195041_DBReset")]
+    partial class DBReset
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -195,7 +195,7 @@ namespace DigginDeep.API.Migrations
                         {
                             Id = 1,
                             Description = "Complete the homework for the week",
-                            DueDate = new DateTime(2024, 11, 11, 0, 0, 0, 0, DateTimeKind.Local),
+                            DueDate = new DateTime(2024, 12, 7, 0, 0, 0, 0, DateTimeKind.Local),
                             IsComplete = false,
                             Task = "Complete Homework"
                         });

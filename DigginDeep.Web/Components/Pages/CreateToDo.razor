@@ -5,23 +5,47 @@
 
 <h3>Create New Task</h3>
 
-<Form ButtonText="Create Task" todo="@todo" OnValidSubmit="@CreateTask" FormName="createToDoForm" />
-
+<Form ButtonText="Create Task" 
+      todo="@todo" 
+      OnValidSubmit="@(async () => await CreateTask())"
+      FormName="createToDoForm" 
+      TodoChanged="@HandleTodoChanged" />
 
 @code {
-    DigginDeep.Models.ToDoList todo = new DigginDeep.Models.ToDoList();
+    private DigginDeep.Models.ToDoList todo = new DigginDeep.Models.ToDoList();
+
+    private void HandleTodoChanged(DigginDeep.Models.ToDoList updatedTodo)
+    {
+        todo = updatedTodo;
+        StateHasChanged();
+    }
 
     async Task CreateTask()
+{
+    Console.WriteLine($"Creating task with values: Task={todo.Task}, Description={todo.Description}");
+    
+    if (todo == null)
     {
-        Console.WriteLine("Creating Task");
-        Console.WriteLine($"Id: {todo.Id}");
-        Console.WriteLine($"Todo: {todo}");
-        Console.WriteLine($"Task: {todo.Task}");
-        Console.WriteLine($"Description: {todo.Description}");
-        Console.WriteLine($"Due Date: {todo.DueDate}");
-        Console.WriteLine($"Is Complete: {todo.IsComplete}");
-
-        await Service.AddToDoList(todo);
-        navManager.NavigateTo("/todo");
+        Console.WriteLine("Todo object is null");
+        return;
     }
+
+    try 
+    {
+        if (!string.IsNullOrWhiteSpace(todo.Task) && !string.IsNullOrWhiteSpace(todo.Description))
+        {
+            Console.WriteLine("Calling AddToDoList");
+            await Service.AddToDoList(todo);
+            navManager.NavigateTo("/todo");
+        }
+        else
+        {
+            Console.WriteLine($"Validation failed: Task={todo.Task?.Length ?? 0}, Description={todo.Description?.Length ?? 0}");
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error creating task: {ex.Message}");
+    }
+}
 }
